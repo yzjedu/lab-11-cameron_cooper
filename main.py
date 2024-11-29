@@ -53,21 +53,21 @@ def read_file_to_list(filename):
 def translate_list_with_dictionary(list, dictionary):
     translation = []
     keys = dictionary.keys()
-    for line in list:
-        for word in line:
-            count = 0
-            while word != keys[count]:
-                count += 1
-            word = keys[count]
-            translation.append(word)
+    for key in keys:
+        for line in list:
+            for word in line:
+                if word == dictionary[key]:
+                    word = dictionary[key]
+                    translation.append(word)
     return translation
+# PLEASE CHECK THIS FUNCTION SPECIFICALLY, I DO NOT KNOW WHAT TO DO ABOUT IT
 
 # Purpose: Write a list to a file
 # Parameters: list, filename
 # Return: None
 def write_list_to_file(my_list, filename):
     # Open the file for writing
-    fd = open(filename, "a")
+    fd = open(filename, "w")
     # Write each item in the list to the file
     for item in my_list:
         fd.write(str(item))
@@ -85,8 +85,7 @@ def main():
         translate_file = verify_file()
         translate_list = read_file_to_list(translate_file)
         translated_list = translate_list_with_dictionary(translate_list, dictionary)
-        print("Please enter which file you would like to write the translation to.\n")
-        outfile = verify_file()
+        outfile = input("Please enter which file you would like to write the translation to. ")
         write_list_to_file(translated_list, outfile)
         print("Thank you for using the program.\n")
         continue_choice = input("Would you like to translate another file? Please enter yes or no. ")

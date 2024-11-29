@@ -2,9 +2,9 @@
 # Course:  CS151*06
 # Due Date: 11/28/2024
 # Lab Assignment: Lab 11
-# Problem Statement:
-# Data In:
-# Data Out:
+# Problem Statement: Create a program to convert encrypted text into plain English
+# Data In: Dictionary file, file to translate, translated file name
+# Data Out: Translated file
 
 import os
 
@@ -52,14 +52,14 @@ def read_file_to_list(filename):
 # Return: translation
 def translate_list_with_dictionary(list, dictionary):
     translation = []
-    values = list.split()
     keys = dictionary.keys()
-    for word in range(len(values)):
-        count = 0
-        while word != keys[count]:
-            count += 1
-        word = keys[count]
-        translation.append(word)
+    for line in list:
+        for word in line:
+            count = 0
+            while word != keys[count]:
+                count += 1
+            word = keys[count]
+            translation.append(word)
     return translation
 
 # Purpose: Write a list to a file

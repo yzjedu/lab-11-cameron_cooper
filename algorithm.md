@@ -4,8 +4,7 @@
 #### Write down the list of tasks to help you think
 
 - Check the file input name for error
-- Read the morse code file into a dictionary 
-- Organize the dictionary so the morse code is the key and the letters are the variables
+- Read the morse code file into a dictionary
 - Read morse code data from a file
 - Translate the morse code data and write it into a new file
 - Main
@@ -25,13 +24,6 @@ Return:
 Algorithm:
 1. While the given file does not exist
    1. Prompt the user to input another file name
-
-Purpose: Organize the dictionary so the morse code is the key and the letters are the variables  
-Name: organize_dict  
-Parameters: Dictionary  
-Return:   
-Algorithm:
-1. 
 
 Purpose: Read data from file  
 Name: read_from_file  

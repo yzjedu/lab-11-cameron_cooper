@@ -50,17 +50,21 @@ def read_file_to_list(filename):
 # Purpose: Translate the morse code data and write it into a new file
 # Parameters: list, dictionary
 # Return: translation
-def translate_list_with_dictionary(list, dictionary):
+def translate_list_with_dictionary(lines, dictionary):
     translation = []
-    keys = dictionary.keys()
-    for key in keys:
-        for line in list:
-            for word in line:
-                if word == dictionary[key]:
-                    word = dictionary[key]
-                    translation.append(word)
+    for line in lines:
+        words = line.split(' / ')
+        # Split into words (using '/')
+        decoded_words = []
+        for word in words:
+            letters = word.split()
+            # Split into individual Morse code letters
+            decoded_letters = [dictionary.get(letter, '?') for letter in letters]
+            decoded_words.append(''.join(decoded_letters))
+            # Join letters into a word
+        translation.append(' '.join(decoded_words))
+        # Join words into a line
     return translation
-# PLEASE CHECK THIS FUNCTION SPECIFICALLY, I DO NOT KNOW WHAT TO DO ABOUT IT
 
 # Purpose: Write a list to a file
 # Parameters: list, filename

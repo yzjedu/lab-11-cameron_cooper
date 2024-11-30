@@ -23,7 +23,8 @@ def verify_file():
 # Purpose: Read the morse code file into a dictionary
 # Parameters: filename
 # Return: morse_dict
-def read_file_to_dict(filename):
+def read_file_to_dict():
+    filename = 'morsecode.txt'
     morse_dict = {}
     morse_data = open(filename, 'r')
     for line in morse_data:
@@ -82,9 +83,7 @@ def main():
     continue_choice = 'yes'
     while continue_choice != 'no':
         print("This program's purpose is to translate a file with a given dictionary.")
-        print("Please enter which file you want to use as a dictionary.\n")
-        dict_file = verify_file()
-        dictionary = read_file_to_dict(dict_file)
+        dictionary = read_file_to_dict()
         print("Now, please enter which file you would like to translate.\n")
         translate_file = verify_file()
         translate_list = read_file_to_list(translate_file)

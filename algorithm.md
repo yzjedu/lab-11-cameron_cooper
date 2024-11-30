@@ -15,8 +15,9 @@ Name: read_to_dict
 Parameters: File name  
 Return: Dictionary  
 Algorithm:
-1. Open the file with the intent to read
-2. Read the data from the file into a dictionary
+1. set filename equal to morsecode txt file
+2. Open the file with the intent to read
+3. Read the data from the file into a dictionary
 
 Purpose: Check that a given file exists  
 Name: verify_file  

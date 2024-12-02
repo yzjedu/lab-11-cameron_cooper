@@ -5,6 +5,7 @@
 # Problem Statement: Create a program to convert encrypted text into plain English
 # Data In: Dictionary file, file to translate, translated file name
 # Data Out: Translated file
+# Resources: Class code
 
 import os
 

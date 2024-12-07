@@ -1,12 +1,11 @@
-ENCRYPTED:
-# Fstzsqhwcb Rcqiasbh
+# Reflection Document
 
-* Rfwjs Tizz Boas: Qccdsf Bonof
-* Dofhbsf Tizz Boas: Qoasfcb Qcapofwno
-* Ghirsbh WR: 001930106
+* Drive Full Name: Cooper Nazar
+* Partner Full Name: Cameron Combariza
+* Student ID: 001930106
 
-Ks ksfs asobh hc qfsohs o dfcufoa hc hfobgzohs sbqfmdhsr twzsg wbhc Sbuzwgv. Wh kog asobh hc uwjs ig dfoqhwqs kwhv 
-rwqhwcbofwsg, tczzckwbu dfcpzsa-gczjwbu hsqvbweisg, qfsohwbu tibqhwcbg, obr rcwbu twzs W/C. Hvs hfobgzohwcb tibqhwcb 
-kog o pwu wggis. W'js ogysr am dofhbsf hc qvsqy kvoh ks vojs obr kvm wh wgb'h kcfywbu cih psqoigs W kfchs acgh ct hvs 
-qcrs. Kcfywbu kwhv am dofhbsf kog rwttwqizh psqoigs wh wg wbqfsrwpzm rwttwqizh hc rc rsqsbh kcfy cjsf Hvobyguwjwbu 
-pfsoy, pih W aobousr hc rc acgh ct hvs qcrwbu, sbhfighwbu hvs twboz sffcf qvsqywbu obr ozucfwhva kfwhwbu hc am dofhbsf.
+We were meant to create a program to translate encrypted files into English. It was meant to give us practice with 
+dictionaries, following problem-solving techniques, creating functions, and doing file I/O. The translation function 
+was a big issue. I've asked my partner to check what we have and why it isn't working out because I wrote most of the 
+code. Working with my partner was difficult because it is incredibly difficult to do decent work over Thanksgiving 
+break, but I managed to do most of the coding, entrusting the final error checking and algorithm writing to my partner.
